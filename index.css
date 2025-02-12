@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+.body{
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff; 
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -36,3 +42,41 @@
 .h1{
     font-size: 16px;
 }
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.card img{
+    border-radius: 20px;
+}
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 10px;
+}
+
+.card-content p, .card-content h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.card-content h3 {
+    font-weight: bold;
+}
+
+
+
+
+
