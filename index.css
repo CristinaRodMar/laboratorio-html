@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.body{
-        font-family: 'Montserrat', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #ffffff; 
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    width: 100%;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,25 +34,26 @@
     font-size: 16px;
 }
 
-.icons{
+.icons {
     display: flex;
     gap: 16px;
 }
 
-.icons img{
+.icons img {
     margin-left: 16px;
 }
 
-.h1{
+.h1 {
     font-size: 16px;
 }
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,9 +62,10 @@
     padding: 10px;
 }
 
-.card img{
+.card img {
     border-radius: 20px;
 }
+
 .card-content {
     display: flex;
     justify-content: space-between;
@@ -76,7 +82,67 @@
     font-weight: bold;
 }
 
+.main-content {
+    flex: 1;
+}
 
+.footer {
+    background-color: #212429;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
 
+.footer div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.footer img{
+background-color: #ffffff;
+border-radius: 50%;
+padding: 10px;
+}
 
+@media (max-width: 920px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .icons {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
